@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>PonG</title>
+        <meta charset="utf-8">
+        <link  rel="stylesheet"  href="style.css"/>
+      	<script src="JS/script_pg.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav id="navigation">
+            	<ul>
+		    <li><a href="index.html">Accueil</a></li>
+		    <li><a href="page_gs.html">GreenScreen</a></li>
+		    <li><a href="page_cb.html">CasseBrique</a></li>
+		    <li><a href="page_pg.html">Pong</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+	<p> Pressez la barre "Espace" pour servir
+	    <button id="btnNG" type="button" onclick="newGame()">Nouvelle Partie</button>
+	</p>
+	    <svg id="pong" width="810"px height="610"px xmlns="http://www.w3.org/2000/svg" version="1.1" onload=init()>
+		<rect id="terrain" x=5 y=5 width="800"px height="600"px stroke="white" stroke-width="10"></rect>
+		<line id ="net" x1=400 x2=400 y1=0 y2=600 stroke-dasharray="10,20" stroke="white" stroke-width="5"/>
+		<rect id="rj1" x=50 y=260 width=15 height=80></rect>
+		<rect id="rj2" x=735 y=260 width=15 height=80></rect>
+		<text id="scJ1" x="300" y="100">0</text>
+		<text id="scJ2" x="500" y="100" >0</text>		
+		<circle id="ball" cx=400 cy=300 r=10></circle>
+	    </svg>
+	</section>
+        <footer></footer>
+    </body>
+</html>

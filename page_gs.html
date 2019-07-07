@@ -1,0 +1,35 @@
+<html>
+<head>
+  <title>Green Screen</title>
+  <meta charset="utf-8">
+  <script src="./JS/jquery.js"></script>
+  <script src ="./JS/script_gs.js"></script>
+   <link rel="stylesheet" href="style.css" />
+</head>
+  <body>
+        <header>
+            <nav id="navigation">
+            		<ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="page_gs.html">GreenScreen</a></li>
+                <li><a href="page_cb.html">CasseBrique</a></li>
+                <li><a href="page_pg.html">Pong</a></li>
+                </ul>
+            </nav>
+        </header>
+ <br>
+    <div style="position:fixed;top:40;left:0;z-index:100">
+
+      <input type="range" min="0" max="255" value="40" id="th" style="width:640px;" ></input>
+      <button id="snap">Take background</button>
+
+    </div>
+
+    <video id="video" width="640" height="480" autoplay></video>
+
+    <div style="position:relative;display:inline-block;width:640px;height:480px;">
+      <img style="position:absolute;left:0;top:40"      id="backimg" width="640" height="480"  src="./Images/back.jpg">
+      <canvas style="position:absolute;left:0;top:40"   id="canvas" width="640" height="480"></canvas>
+    </div>
+  </body>
+  </html>

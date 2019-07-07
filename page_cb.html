@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Casse Brique</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" />
+    <script src="./JS/jquery.js"></script>
+    <script src="./JS/script_cb.js"></script>
+  <style>
+  svg { border:1px solid black; }
+  #bar { fill:black; stroke:none; }
+  h1 { display:none; }
+  </style>
+</head>
+
+<body>
+        <header>
+            <nav id="navigation">
+            		<ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="page_gs.html">GreenScreen</a></li>
+                <li><a href="page_cb.html">CasseBrique</a></li>
+                <li><a href="page_pg.html">Pong</a></li>
+                </ul>
+            </nav>
+        </header>
+<br>
+<svg width=800px height=600px>
+  <rect id="bar" x=0 y=590 width=40 height=10></rect>
+  <circle id="ball" cx=400 cy=300 r=20></circle>
+</svg>
+<h1 id="msg"></h1>
+</body>
+</html>

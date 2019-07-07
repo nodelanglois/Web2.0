@@ -1,0 +1,114 @@
+
+body {
+  background-color: #194E70; 
+  font-family: arial;
+  color: white;
+  margin: 0px 40px 0px 40px;
+  padding: 0px;
+  width: 80%
+}
+
+h1 {
+  text-align: center;
+  color : #194E70; 
+  background-color: orange;
+  padding: 14px;
+}
+
+h2 {
+  background-color: #2B6F92;
+  padding: 8px;
+  width: 600px;
+}
+
+p { 
+  font-size: 20px;
+}
+
+a {
+color: orange;
+}
+
+
+/* -------------------------*/
+/* Elements du menu         */
+/* -------------------------*/
+
+nav{
+width:100%
+}
+
+nav ul {
+  margin    : 0px;
+  padding   : 0px;
+  overflow  : hidden; /*resoud un pb sur les hauteurs*/
+}
+
+nav li {
+  float: left;
+  border-right:1px solid #bbb;
+  list-style-type: none;  /*supprimer les "."*/
+}
+
+nav a {
+  display: inline-block;
+  color     : white;
+  padding   : 14px;
+  border    : 1px solid #555;
+  background-color: #555;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #111;
+}
+
+nav li a:active {
+  background-color: #4CAF50;
+}
+
+
+/* -------------------------*/
+/* Elements de Pong (page4) */
+/* -------------------------*/
+
+#btnNG {
+  margin-left: 420px; 
+}
+
+#pong {
+  margin-left: 40px;  
+  border     : 1px solid #555;
+}
+
+#ball {
+fill: red;
+stroke: none;
+}
+
+#rj1 {
+fill: red;
+}
+
+#rj2 {
+fill: red;
+stroke: none;
+}
+
+#score {
+  display    : inline-block;
+ }
+
+#scJ1 {
+  font-size  : 60px;
+  font-family: monaco;
+  text-anchor: middle;
+  fill       : #fff;
+}
+
+#scJ2 {
+  font-size  : 60px;
+  font-family: monaco;
+  text-anchor: middle;
+  fill       : #fff;
+}
